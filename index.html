@@ -2,381 +2,476 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>K.T. Likhith | Cloud & DevOps Engineer | Production Support</title>
-    <meta name="description"
-        content="Portfolio of K.T. Likhith, a Cloud & DevOps Engineer specializing in Production Support, CI/CD, Automation, and Incident Management.">
-    <meta name="keywords"
-        content="Cloud Engineer, DevOps Engineer, Production Support, AWS, Docker, Kubernetes, Jenkins, CI/CD, Automation, K.T. Likhith">
-    <meta name="author" content="K.T. Likhith">
-
-    <!-- Open Graph / Facebook -->
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://ktlikhith.github.io/">
-    <meta property="og:title" content="K.T. Likhith | Cloud & DevOps Engineer">
-    <meta property="og:description"
-        content="Building Reliable, Scalable and Automated Systems. View my projects and experience.">
-    <meta property="og:image" content="assets/og-image.jpg">
-
-    <!-- Twitter -->
-    <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://ktlikhith.github.io/">
-    <meta property="twitter:title" content="K.T. Likhith | Cloud & DevOps Engineer">
-    <meta property="twitter:description"
-        content="Building Reliable, Scalable and Automated Systems. View my projects and experience.">
-    <meta property="twitter:image" content="assets/og-image.jpg">
-
-    <!-- Favicon -->
-    <link rel="icon" type="image/x-icon" href="favicon.ico">
-
-    <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>K.T. Likhith | Cloud & DevOps Engineer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap"
+    rel="stylesheet" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
-    <!-- Navigation -->
-    <nav class="navbar">
-        <div class="container nav-container">
-            <a href="#" class="logo">KTL<span class="dot">.</span></a>
-            <div class="menu-toggle" id="mobile-menu">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
-            </div>
-            <ul class="nav-menu">
-                <li><a href="#about" class="nav-link">About</a></li>
-                <li><a href="#expertise" class="nav-link">Expertise</a></li>
-                <li><a href="#experience" class="nav-link">Experience</a></li>
-                <li><a href="#projects" class="nav-link">Projects</a></li>
-                <li><a href="#education" class="nav-link">Education</a></li>
-                <li><a href="#contact" class="nav-link btn-contact">Contact</a></li>
-            </ul>
+
+  <!-- Cursor -->
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-follower" id="cursorFollower"></div>
+
+  <!-- Navbar -->
+  <nav>
+    <a href="#" class="nav-logo">KTL<span>.</span></a>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#expertise">Expertise</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#projects">Projects</a></li>
+    </ul>
+    <div class="menu-toggle" id="mobile-menu">
+      <span></span><span></span><span></span>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section id="hero">
+    <div class="hero-tag" id="heroTag">Cloud & DevOps Engineer</div>
+    <h1 class="hero-name" style="margin-top: 20px;">
+      <span class="line"><span>K.T.</span></span>
+      <span class="line accent-line"><span><span class="accent-word">LIKHITH</span></span></span>
+    </h1>
+    <div class="hero-bottom" id="heroBottom">
+      <p class="hero-desc">
+        <strong>Data Engineering · Cloud Operations · DevOps</strong><br />
+        Building ETL/ELT pipelines, data ingestion workflows, and scalable cloud deployments using modern tools.
+      </p>
+      <div class="hero-ctas">
+        <a href="#contact" class="btn-primary">Let's Connect ↓</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Marquee -->
+  <div class="marquee-section">
+    <div class="marquee-track">
+      <span class="marquee-item">Snowflake</span>
+      <span class="marquee-item">AWS</span>
+      <span class="marquee-item">dbt</span>
+      <span class="marquee-item">SQL</span>
+      <span class="marquee-item">Jenkins</span>
+      <span class="marquee-item">Docker</span>
+      <span class="marquee-item">GitHub Actions</span>
+      <span class="marquee-item">Kubernetes</span>
+      <span class="marquee-item">Snowpipe</span>
+      <span class="marquee-item">Data Engineering</span>
+      <span class="marquee-item">Snowflake</span>
+      <span class="marquee-item">AWS</span>
+      <span class="marquee-item">dbt</span>
+      <span class="marquee-item">SQL</span>
+      <span class="marquee-item">Jenkins</span>
+      <span class="marquee-item">Docker</span>
+      <span class="marquee-item">GitHub Actions</span>
+      <span class="marquee-item">Kubernetes</span>
+      <span class="marquee-item">Snowpipe</span>
+      <span class="marquee-item">Data Engineering</span>
+    </div>
+  </div>
+
+  <!-- About -->
+  <section id="about">
+    <div class="section-label" data-num="01">About Me</div>
+    <div class="about-grid">
+      <div class="about-heading reveal">
+        <span class="outline">ABOUT</span><br />
+        <span class="filled">WHO</span><br />
+        <span class="outline">I AM</span>
+      </div>
+      <div class="about-right">
+        <p class="about-bio reveal">
+          <strong>Programmer Analyst</strong> with 1+ years of experience and a <strong>Master's degree in Cloud
+            Computing</strong>. Hands-on in building ETL/ELT pipelines, data ingestion workflows, and data
+          transformation using SQL and dbt. Proficient in AWS services including S3, Glue, and Athena.<br /><br />
+          Experienced with <strong>Snowflake</strong> cloud data warehouse including data migration, ingestion, and
+          transformation. Worked with Docker, and CI/CD pipelines using Jenkins and GitHub Actions. Strong focus on data
+          quality and pipeline automation.
+        </p>
+      <div class="stat-row reveal">
+        <div class="stat-item">
+          <div class="stat-num">1+</div>
+          <div class="stat-label">Years Experience</div>
         </div>
-    </nav>
+      </div>
+      </div>
+    </div>
+  </section>
 
-    <!-- Hero Section -->
-    <section id="hero" class="hero">
-        <div class="container hero-container">
-            <div class="hero-content fade-in">
-                <p class="greeting">Hello, I'm</p>
-                <h1 class="name">K.T. Likhith</h1>
-                <h2 class="title">Production Support Engineer <br> <span class="highlight">Cloud & DevOps Engineer
-                    </span></h2>
-                <p class="tagline">Broad experience in Production Support & Cloud Operations. Specialized in Incident
-                    Management, RCA, and AWS/Linux environments.</p>
-                <div class="hero-buttons">
-                    <a href="#projects" class="btn btn-primary">View Projects</a>
-                    <a href="Likhith_Resume.pdf" class="btn btn-secondary" target="_blank" download>Download Resume <i
-                            class="fas fa-download"></i></a>
-                </div>
-            </div>
-            <div class="hero-visual fade-in">
-                <div class="tech-stack-cloud">
-                    <!-- Decorative elements representing cloud infrastructure -->
-                    <div class="cloud-icon" title="AWS"><i class="fab fa-aws"></i></div>
-                    <div class="cloud-icon" title="Docker"><i class="fab fa-docker"></i></div>
-                    <div class="cloud-icon" title="Linux"><i class="fab fa-linux"></i></div>
-                    <div class="cloud-icon" title="Jenkins"><i class="fab fa-jenkins"></i></div>
-                </div>
-            </div>
+  <!-- Expertise -->
+  <section id="expertise">
+    <div class="section-label" data-num="02">Core Expertise</div>
+    <div class="expertise-grid">
+      <div class="expertise-card reveal">
+        <div class="bg-number">01</div>
+        <div class="expertise-icon">📊</div>
+        <div class="expertise-title">Data Warehousing</div>
+        <div class="expertise-desc">Building ETL/ELT pipelines, real-time data ingestion using Snowpipe, and data
+          transformation with dbt.</div>
+        <div class="tags">
+          <span class="tag">Snowflake</span>
+          <span class="tag">Snowpipe</span>
+          <span class="tag">dbt</span>
+          <span class="tag">SCD</span>
+          <span class="tag">Data Ingestion</span>
         </div>
-        <div class="scroll-down">
-            <a href="#about" aria-label="Scroll Down"><i class="fas fa-chevron-down"></i></a>
+        <div class="progress-line"></div>
+      </div>
+      <div class="expertise-card reveal">
+        <div class="bg-number">02</div>
+        <div class="expertise-icon">☁</div>
+        <div class="expertise-title">Cloud Infrastructure</div>
+        <div class="expertise-desc">Leveraging AWS services like S3, Glue, and Athena, alongside Azure Blob Storage for
+          robust cloud solutions.</div>
+        <div class="tags">
+          <span class="tag">AWS S3</span>
+          <span class="tag">AWS EC2</span>
+          <span class="tag">CodeDeploy</span>
+          <span class="tag">Azure Blob</span>
         </div>
-    </section>
-
-    <!-- About Section -->
-    <section id="about" class="section">
-        <div class="container">
-            <h2 class="section-title">About Me</h2>
-            <div class="about-content">
-                <div class="about-text">
-                    <p>Programmer Analyst with 1+ years of industry experience and a Master’s degree in Cloud Computing.
-                        Proven expertise in production support, incident management, and cloud-based DevOps practices.
-                    </p>
-                    <p>Experienced in supporting simulation environments at Continental and delivering application
-                        reliability at Cognizant. Hands-on with AWS, CI/CD pipelines, Docker, Kubernetes, and Linux
-                        systems with strong focus on automation, troubleshooting, and operational excellence.</p>
-                </div>
-                <div class="about-stats">
-                    <div class="stat-item">
-                        <span class="stat-number">1.1+</span>
-                        <span class="stat-label">Years Exp</span>
-                    </div>
-
-                </div>
-            </div>
+        <div class="progress-line"></div>
+      </div>
+      <div class="expertise-card reveal">
+        <div class="bg-number">03</div>
+        <div class="expertise-icon">⚙</div>
+        <div class="expertise-title">CI/CD & DevOps</div>
+        <div class="expertise-desc">Automating build, test, and deployment workflows using Jenkins, GitHub Actions, and
+          containerization.</div>
+        <div class="tags">
+          <span class="tag">Jenkins</span>
+          <span class="tag">Docker</span>
+          <span class="tag">Kubernetes</span>
+          <span class="tag">GitHub Actions</span>
+          <span class="tag">Git</span>
         </div>
-    </section>
-
-    <!-- Core Expertise Section -->
-    <section id="expertise" class="section bg-card">
-        <div class="container">
-            <h2 class="section-title">Core Expertise</h2>
-            <div class="expertise-grid">
-                <div class="expertise-card">
-                    <div class="icon-box"><i class="fas fa-cloud"></i></div>
-                    <h3>Cloud & DevOps</h3>
-                    <ul>
-                        <li>AWS (EC2, S3, CodeDeploy)</li>
-                        <li>Docker & Kubernetes</li>
-                        <li>Jenkins & CI/CD Pipelines</li>
-                        <li>Git & Linux Administration</li>
-                    </ul>
-                </div>
-                <div class="expertise-card">
-                    <div class="icon-box"><i class="fas fa-chart-line"></i></div>
-                    <h3>Monitoring & Observability</h3>
-                    <ul>
-                        <li>AWS CloudWatch (Metrics, Logs)</li>
-                        <li>Log Analysis & Alerts</li>
-                        <li>App Performance Monitoring</li>
-                        <li>Alert Configuration</li>
-                    </ul>
-                </div>
-                <div class="expertise-card">
-                    <div class="icon-box"><i class="fas fa-headset"></i></div>
-                    <h3>Support & ITSM</h3>
-                    <ul>
-                        <li>Incident & Problem Management</li>
-                        <li>Root Cause Analysis (RCA)</li>
-                        <li>ServiceNow & JIRA</li>
-                        <li>SLA & Release Support</li>
-                    </ul>
-                </div>
-                <div class="expertise-card">
-                    <div class="icon-box"><i class="fas fa-code"></i></div>
-                    <h3>Development & Data</h3>
-                    <ul>
-                        <li>HTML, CSS, JavaScript</li>
-                        <li>SQL & Snowflake</li>
-                        <li>C++ Programming</li>
-                        <li>Data Integrity Checks</li>
-                    </ul>
-                </div>
-            </div>
+        <div class="progress-line"></div>
+      </div>
+      <div class="expertise-card reveal">
+        <div class="bg-number">04</div>
+        <div class="expertise-icon">💻</div>
+        <div class="expertise-title">Programming & Tools</div>
+        <div class="expertise-desc">Writing complex SQL for validation and transformation, developing in C++, and
+          managing projects with JIRA.</div>
+        <div class="tags">
+          <span class="tag">SQL</span>
+          <span class="tag">C++</span>
+          <span class="tag">JIRA</span>
         </div>
-    </section>
+        <div class="progress-line"></div>
+      </div>
+    </div>
+  </section>
 
-    <!-- Professional Experience Section -->
-    <section id="experience" class="section">
-        <div class="container">
-            <h2 class="section-title">Professional Experience</h2>
-            <div class="timeline">
-                <div class="timeline-item">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-date">Jun 2023 – Jun 2024</div>
-                    <div class="timeline-content">
-                        <h3>Continental Automotive Components India Pvt. Ltd.</h3>
-                        <h4>Software Engineer Intern</h4>
-                        <ul>
-                            <li>Maintained and supported complex Linux-based simulation environments, ensuring high
-                                availability and operational stability.</li>
-                            <li>Monitored simulation system health across RDI, CDI, and LDI environments to troubleshoot
-                                bottlenecks and minimize downtime.</li>
-                            <li>Collaborated with cross-functional teams to diagnose issues, implement fixes, and
-                                maintain configuration runbooks.</li>
-                            <li>Automated test scenario creation using CarMaker (C++) to enable consistent, repeatable
-                                validation processes.</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="timeline-item">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-date">Oct 2021 – Nov 2022</div>
-                    <div class="timeline-content">
-                        <h3>Cognizant Technology Solutions</h3>
-                        <h4>Programmer Analyst</h4>
-                        <ul>
-                            <li>Managed high-volume production support queue of 80–90 tickets/day via ServiceNow and
-                                JIRA, consistently achieving 98–99% SLA compliance.</li>
-                            <li>Monitored application health using AWS CloudWatch — tracked utilization, configured
-                                alarms, and analyzed logs to resolve issues.</li>
-                            <li>Analyzed application logs to identify and triage 4xx/5xx HTTP errors, API failures, and
-                                latency spikes to isolate root causes.</li>
-                            <li>Performed structured Root Cause Analysis (RCA) for recurring incidents and drove
-                                permanent fixes with development teams.</li>
-                            <li>Developed and maintained web applications using HTML, CSS, and JavaScript; executed SQL
-                                queries to verify production data integrity.</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
+  <!-- Experience -->
+  <section id="experience">
+    <div class="section-label" data-num="03">Experience</div>
+    <div class="exp-timeline" id="expTimeline">
+      <!-- SVG drawing line -->
+      <svg class="exp-timeline-svg" id="timelineSvg" preserveAspectRatio="none">
+        <line class="track" x1="1" y1="0" x2="1" y2="100%" />
+        <line class="progress" id="timelineProgress" x1="1" y1="0" x2="1" y2="100%" />
+      </svg>
+
+      <!-- Card 1: Freelance -->
+      <div class="exp-card" onclick="toggleExp(this)">
+        <div class="exp-left">
+          <div class="exp-date">Jan 2025 – Present</div>
+          <div class="exp-company-name">Freelance</div>
+          <div class="exp-location">Snowflake Projects</div>
         </div>
-    </section>
-
-    <!-- Projects Section -->
-    <section id="projects" class="section bg-card">
-        <div class="container">
-            <h2 class="section-title">Key Projects</h2>
-            <div class="projects-grid">
-                <!-- Project 1 -->
-                <article class="project-card">
-                    <div class="project-header">
-                        <div class="project-icon"><i class="fas fa-rocket"></i></div>
-                        <div class="project-title-block">
-                            <h3>CI/CD Pipeline with Monitoring</h3>
-                            <p class="project-subtitle">Node.js Application</p>
-                        </div>
-                    </div>
-                    <div class="project-body">
-                        <p>Built end-to-end CI/CD pipeline using Jenkins on AWS EC2 with Git-triggered builds,
-                            CodeDeploy deployments, and Auto Scaling with Load Balancers for high availability.</p>
-                        <ul class="project-details">
-                            <li><i class="fas fa-check"></i> <strong>Execution:</strong> Jenkins on AWS EC2 with
-                                Git-triggered automated builds.</li>
-                            <li><i class="fas fa-check"></i> <strong>Deployment:</strong> Used AWS CodeDeploy, AMIs, and
-                                Launch Templates.</li>
-                            <li><i class="fas fa-check"></i> <strong>Monitoring:</strong> Integrated AWS CloudWatch to
-                                monitor app health and track error rates.</li>
-                            <li><i class="fas fa-check"></i> <strong>Scaling:</strong> Configured Auto Scaling Groups
-                                (ASG)
-                                and Application Load Balancers (ALB).</li>
-                        </ul>
-                        <div class="architecture-placeholder">
-                            <span><i class="fas fa-network-wired"></i> Architecture: Jenkins → S3 → CodeDeploy →
-                                ASG</span>
-                        </div>
-                    </div>
-
-                </article>
-
-                <!-- Project 2 -->
-                <article class="project-card">
-                    <div class="project-header">
-                        <div class="project-icon"><i class="fas fa-database"></i></div>
-                        <div class="project-title-block">
-                            <h3>Containerized Data Pipeline</h3>
-                            <p class="project-subtitle">Docker, Spark, MinIO, Iceberg</p>
-                        </div>
-                    </div>
-                    <div class="project-body">
-                        <p>Designed and deployed a fully Dockerized data pipeline using Apache Spark, Iceberg, and
-                            MinIO — enabling consistent environments, data versioning, and scalable analytics.</p>
-                        <ul class="project-details">
-                            <li><i class="fas fa-check"></i> <strong>Pipeline:</strong> Built end-to-end data pipeline
-                                using MinIO, Apache Spark, and Apache Iceberg.</li>
-                            <li><i class="fas fa-check"></i> <strong>Environment:</strong> Dockerized Spark, Iceberg,
-                                MinIO, and Jupyter Notebook ensuring consistent deployment.</li>
-                            <li><i class="fas fa-check"></i> <strong>Analytics:</strong> Executed complex analytics
-                                queries and managed data snapshots.</li>
-                        </ul>
-                        <div class="architecture-placeholder">
-                            <span><i class="fas fa-cubes"></i> Architecture: Docker → Spark → Iceberg → MinIO</span>
-                        </div>
-                    </div>
-
-                </article>
-
-                <!-- Project 3 -->
-                <article class="project-card">
-                    <div class="project-header">
-                        <div class="project-icon"><i class="fas fa-car-side"></i></div>
-                        <div class="project-title-block">
-                            <h3>Simulation Environment Setup</h3>
-                            <p class="project-subtitle">Automated Testing for ADAS</p>
-                        </div>
-                    </div>
-                    <div class="project-body">
-                        <p>Configured high-fidelity simulation environments using IPG CarMaker and C++. Focused on
-                            processing sensor data (LiDAR, Camera) to validate autonomous driving features.</p>
-                        <ul class="project-details">
-                            <li><i class="fas fa-check"></i> <strong>Simulation:</strong> Generated synthetic LiDAR data
-                                using CarMaker (C++) for testing and validation.</li>
-                            <li><i class="fas fa-check"></i> <strong>Environment:</strong> Built synchronized simulation
-                                environment for RDI, CDI, and LDI systems.</li>
-                            <li><i class="fas fa-check"></i> <strong>Scenarios:</strong> Created custom driving
-                                scenarios enabling realistic validation workflows.</li>
-                            <li><i class="fas fa-check"></i> <strong>Sensors:</strong> Processed and validated camera
-                                sensor image data using dSPACE tools.</li>
-                        </ul>
-                        <div class="architecture-placeholder">
-                            <span><i class="fas fa-laptop-code"></i> Architecture: CarMaker Loop & Data Flow</span>
-                        </div>
-                    </div>
-
-                </article>
-            </div>
+        <div class="exp-right">
+          <div class="exp-header">
+          <div class="exp-role-wrap">
+            <div class="exp-role">Snowflake Data Engineer</div>
+            <span class="exp-type-badge">Freelance</span>
+          </div>
+          <div class="exp-toggle">+</div>
         </div>
-    </section>
-
-    <!-- Education Section -->
-    <section id="education" class="section">
-        <div class="container">
-            <h2 class="section-title">Education</h2>
-            <div class="edu-grid">
-                <div class="edu-card">
-                    <div class="edu-year">Sep 2022 – Oct 2024</div>
-                    <h3>Master of Engineering – Cloud Computing</h3>
-                    <p class="institution">Manipal School of Information Sciences, MAHE</p>
-                    <p class="grade">CGPA: <strong>8.59/10</strong></p>
+          <div class="exp-body">
+            <div class="exp-body-inner">
+              <div class="exp-highlights">
+                <div class="exp-highlight-item">
+                  <div class="exp-hi-icon">⚡</div>
+                  <div class="exp-hi-text">
+                    <strong>Data Ingestion & Transformation</strong>
+                    Implemented Snowpipe for real-time ingestion and Streams for CDC. Created dbt models and macros.
+                  </div>
                 </div>
-                <div class="edu-card">
-                    <div class="edu-year">Aug 2017 – Aug 2021</div>
-                    <h3>Bachelor of Engineering – CSE</h3>
-                    <p class="institution">K.V.G College of Engineering, Sullia</p>
-                    <p class="grade">CGPA: <strong>7.95/10</strong></p>
+                <div class="exp-highlight-item">
+                  <div class="exp-hi-icon">💾</div>
+                  <div class="exp-hi-text">
+                    <strong>Cloud Data Management</strong>
+                    Loaded data from Azure Blob Storage & internal stages. Handled complex SQL for data cleansing.
+                  </div>
                 </div>
+                <div class="exp-highlight-item">
+                  <div class="exp-hi-icon">🛠️</div>
+                  <div class="exp-hi-text">
+                    <strong>Snowflake Governance & Optimization</strong>
+                    Leveraged time travel, cloning, secure views, and clustering. Added transient tables to reduce storage.
+                  </div>
+                </div>
+              </div>
+              <div class="exp-skills-row">
+                <span class="exp-skill-tag">Snowflake</span>
+                <span class="exp-skill-tag">Snowpipe</span>
+                <span class="exp-skill-tag">dbt</span>
+                <span class="exp-skill-tag">SQL</span>
+                <span class="exp-skill-tag">Azure</span>
+              </div>
             </div>
-
-            <div class="cert-wrapper">
-                <h3 class="subsection-title">Certifications</h3>
-                <div class="cert-container">
-                    <div class="cert-badge">
-                        <i class="fab fa-aws"></i>
-                        <span>AWS Cloud Foundations</span>
-                    </div>
-                    <div class="cert-badge">
-                        <i class="fas fa-shield-alt"></i>
-                        <span>AWS Cloud Security Foundations</span>
-                    </div>
-                </div>
-            </div>
+          </div>
         </div>
-    </section>
+      </div>
 
-    <!-- Contact Section -->
-    <section id="contact" class="section bg-card contact-section">
-        <div class="container">
-            <h2 class="section-title">Let's Connect</h2>
-            <p class="contact-subtitle">I am currently open to opportunities in Cloud Engineering, DevOps, and
-                Production Support.</p>
-            <div class="contact-methods">
-                <a href="tel:+918546872758" class="contact-card">
-                    <div class="contact-icon"><i class="fas fa-phone"></i></div>
-                    <h3>Phone</h3>
-                    <p>+91 85468 72758</p>
-                </a>
-                <a href="mailto:ktlikhith.naik22@gmail.com" class="contact-card">
-                    <div class="contact-icon"><i class="fas fa-envelope"></i></div>
-                    <h3>Email</h3>
-                    <p>ktlikhith.naik22@gmail.com</p>
-                </a>
-                <a href="https://www.linkedin.com/in/ktlikhith" target="_blank" class="contact-card">
-                    <div class="contact-icon"><i class="fab fa-linkedin"></i></div>
-                    <h3>LinkedIn</h3>
-                    <p>linkedin.com/in/ktlikhith</p>
-                </a>
-                <div class="contact-card">
-                    <div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div>
-                    <h3>Location</h3>
-                    <p>Bengaluru, India</p>
-                </div>
-
-            </div>
-            <footer class="footer">
-                <p>&copy; 2026 K.T. Likhith. Built with code.</p>
-            </footer>
+      <!-- Card 2: Continental -->
+      <div class="exp-card" onclick="toggleExp(this)">
+        <div class="exp-left">
+          <div class="exp-date">Jun 2023 – Jun 2024</div>
+          <div class="exp-company-name">Continental Automotive Component India Pvt Ltd</div>
+          <div class="exp-location">Bengaluru, India</div>
         </div>
-    </section>
+        <div class="exp-right">
+          <div class="exp-header">
+          <div class="exp-role-wrap">
+            <div class="exp-role">Software Engineering Intern</div>
+            <span class="exp-type-badge">Internship</span>
+          </div>
+          <div class="exp-toggle">+</div>
+        </div>
+          <div class="exp-body">
+            <div class="exp-body-inner">
+              <div class="exp-highlights">
+                <div class="exp-highlight-item">
+                  <div class="exp-hi-icon">🚗</div>
+                  <div class="exp-hi-text">
+                    <strong>Synthetic LiDAR & Camera Data</strong>
+                    Developed LiDAR data using CarMaker (C++) and generated camera data using dSPACE for sensor testing.
+                  </div>
+                </div>
+                <div class="exp-highlight-item">
+                  <div class="exp-hi-icon">🔄</div>
+                  <div class="exp-hi-text">
+                    <strong>Synchronized Simulation</strong>
+                    Built and maintained synchronized environments (RDI, CDI, LDI) ensuring stable test execution.
+                  </div>
+                </div>
+                <div class="exp-highlight-item">
+                  <div class="exp-hi-icon">🛠️</div>
+                  <div class="exp-hi-text">
+                    <strong>Automated Validation</strong>
+                    Designed custom driving scenarios in CarMaker for realistic, automated validation workflows.
+                  </div>
+                </div>
+              </div>
+              <div class="exp-skills-row">
+                <span class="exp-skill-tag">C++</span>
+                <span class="exp-skill-tag">CarMaker</span>
+                <span class="exp-skill-tag">dSPACE</span>
+                <span class="exp-skill-tag">LiDAR</span>
+                <span class="exp-skill-tag">Simulation</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
 
-    <script src="script.js"></script>
+      <!-- Card 3: Cognizant -->
+      <div class="exp-card" onclick="toggleExp(this)">
+        <div class="exp-left">
+          <div class="exp-date">Oct 2021 – Nov 2022</div>
+          <div class="exp-company-name">Cognizant Technology Solutions</div>
+          <div class="exp-location">Bengaluru, India</div>
+        </div>
+        <div class="exp-right">
+          <div class="exp-header">
+          <div class="exp-role-wrap">
+            <div class="exp-role">Programmer Analyst</div>
+            <span class="exp-type-badge">Full-Time</span>
+          </div>
+          <div class="exp-toggle">+</div>
+        </div>
+          <div class="exp-body">
+            <div class="exp-body-inner">
+              <div class="exp-highlights">
+                <div class="exp-highlight-item">
+                  <div class="exp-hi-icon">⚙️</div>
+                  <div class="exp-hi-text">
+                    <strong>ETL/ELT Pipelines</strong>
+                    Designed and developed scalable ETL pipelines. Created automated workflows with Apache Airflow.
+                  </div>
+                </div>
+                <div class="exp-highlight-item">
+                  <div class="exp-hi-icon">📊</div>
+                  <div class="exp-hi-text">
+                    <strong>SQL & dbt Transformation</strong>
+                    Wrote optimized SQL and used dbt Core/Cloud to build modular models and data quality tests.
+                  </div>
+                </div>
+                <div class="exp-highlight-item">
+                  <div class="exp-hi-icon">🚀</div>
+                  <div class="exp-hi-text">
+                    <strong>CI/CD Workflows</strong>
+                    Implemented automated build, test, and deployment workflows using GitHub Actions and Jenkins.
+                  </div>
+                </div>
+              </div>
+              <div class="exp-skills-row">
+                <span class="exp-skill-tag">ETL/ELT</span>
+                <span class="exp-skill-tag">Airflow</span>
+                <span class="exp-skill-tag">SQL</span>
+                <span class="exp-skill-tag">dbt</span>
+                <span class="exp-skill-tag">Jenkins</span>
+                <span class="exp-skill-tag">GitHub Actions</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects">
+    <div class="section-label" data-num="04">Projects</div>
+    <div class="projects-heading reveal">
+      KEY<br /><span>WORK</span>
+    </div>
+    <div class="projects-list">
+      <!-- Project 1 -->
+      <div class="project-item reveal" data-color="var(--accent)">
+        <div class="bg-project-num">01</div>
+        <div class="project-num">01</div>
+        <div class="project-info">
+          <div class="project-title">CI/CD Pipeline with Monitoring</div>
+          <div class="project-meta">
+            <span>Node.js Application</span>
+            <span>AWS · Jenkins · CodeDeploy</span>
+          </div>
+          <div class="project-desc-wrapper">
+            <p class="project-desc">Built an end-to-end CI/CD pipeline using Jenkins on AWS EC2 with Git-triggered
+              automated builds, CodeDeploy deployments, and Auto Scaling with Load Balancers. Integrated AWS CloudWatch
+              for real-time monitoring, error tracking, and automated alerts.</p>
+            <div class="project-arch">
+              Jenkins <span>→</span> S3 <span>→</span> CodeDeploy <span>→</span> ASG <span>→</span> ALB
+            </div>
+          </div>
+          <div class="project-stack">
+            <span class="project-tag">Jenkins</span>
+            <span class="project-tag">AWS EC2</span>
+            <span class="project-tag">CodeDeploy</span>
+            <span class="project-tag">CloudWatch</span>
+            <span class="project-tag">Auto Scaling</span>
+            <span class="project-tag">S3</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 2 -->
+      <div class="project-item reveal" data-color="#0097ff">
+        <div class="bg-project-num">02</div>
+        <div class="project-num">02</div>
+        <div class="project-info">
+          <div class="project-title">Containerized Data Pipeline</div>
+          <div class="project-meta">
+            <span>Big Data Engineering</span>
+            <span>Docker · Spark · MinIO · Iceberg</span>
+          </div>
+          <div class="project-desc-wrapper">
+            <p class="project-desc">Designed and deployed a fully Dockerized big data pipeline using Apache Spark,
+              Apache Iceberg, and MinIO. Enabled consistent environments, data versioning, complex analytics queries,
+              and scalable data snapshots.</p>
+            <div class="project-arch">
+              Docker <span>→</span> Spark <span>→</span> Iceberg <span>→</span> MinIO <span>→</span> Jupyter
+            </div>
+          </div>
+          <div class="project-stack">
+            <span class="project-tag">Docker</span>
+            <span class="project-tag">Apache Spark</span>
+            <span class="project-tag">Iceberg</span>
+            <span class="project-tag">MinIO</span>
+            <span class="project-tag">Jupyter</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Education -->
+  <section id="education">
+    <div class="section-label" data-num="05">Education</div>
+    <div class="edu-grid">
+      <div class="edu-card reveal">
+        <div class="edu-year">Sep 2022 – Sep 2024</div>
+        <div class="edu-degree">Master of Engineering</div>
+        <div class="edu-school">Cloud Computing<br />Manipal School of Information Sciences (MSIS), MIT, Manipal</div>
+        <div class="edu-gpa">8.59 <small>/ 10 CGPA</small></div>
+      </div>
+      <div class="edu-card reveal">
+        <div class="edu-year">Aug 2017 – Aug 2021</div>
+        <div class="edu-degree">Bachelor of Engineering</div>
+        <div class="edu-school">Computer Science & Engineering<br />K.V.G College of Engineering, Sullia, DK</div>
+        <div class="edu-gpa">7.95 <small>/ 10 CGPA</small></div>
+      </div>
+      <div class="cert-card reveal" style="grid-column: 1 / -1; border-top: 1px solid var(--border);">
+        <div class="cert-title">Certifications</div>
+        <ul class="cert-list">
+          <li>AWS Academy Graduate – AWS Academy Cloud Security Foundations.</li>
+          <li>AWS Academy Graduate – AWS Academy Cloud Foundations.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact">
+    <div class="section-label" data-num="06">Contact</div>
+    <div class="contact-inner">
+      <div class="contact-big reveal">
+        LET'S<br /><span class="outline">CONNECT</span>
+      </div>
+      <div class="contact-grid reveal">
+        <div class="contact-block">
+          <div class="contact-block-label">Phone</div>
+          <div class="contact-block-value"><a href="tel:+918546872758">+91 85468 72758</a></div>
+        </div>
+        <div class="contact-block">
+          <div class="contact-block-label">Email</div>
+          <div class="contact-block-value"><a href="mailto:ktlikhith.naik22@gmail.com">ktlikhith.naik22@gmail.com</a>
+          </div>
+        </div>
+        <div class="contact-block">
+          <div class="contact-block-label">Location</div>
+          <div class="contact-block-value">Bengaluru, India</div>
+        </div>
+        <div class="contact-block">
+          <div class="contact-block-label">Open To</div>
+          <div class="contact-block-value" style="font-size:15px;color:var(--accent);">Cloud Engineering · Data Engineering · DevOps</div>
+        </div>
+      </div>
+      <div class="social-row reveal">
+        <a href="https://www.linkedin.com/in/ktlikhith" target="_blank" class="social-link">LinkedIn</a>
+        <a href="https://ktlikhith.vercel.app/Likhith_Resume.pdf" target="_blank" class="social-link">Resume</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2026 <span>K.T. Likhith</span>. All rights reserved.</p>
+    <p>Designed & Built with <span>♥</span></p>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 
 </html>
